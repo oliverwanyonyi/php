@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --secondary: #bfe0ff;
+  --primary: #f7f7ff;
+  --grey: #646464;
+  --black: #0e0e0e;
+}
+body {
+  background: var(--secondary);
+  color: var(--black);
+}
+a {
+  text-decoration: none;
+}
+
+a.more-info {
+  color: var(--grey);
+  font-size: 14px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+th{
+  color: #2ecfed;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 20px;
+}
+p {
+  font-size: 15px;
+}
+
+nav {
+  padding: 20px 0;
+  background: var(--primary);
+  width: 100%;
+  padding: 15px 25px;
+}
+.logo {
+  font-size: 15px;
+  color: var(--black);
+}
+li a {
+  color: var(--grey);
+  font-size: 18px;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.text-center {
+  text-align: center;
+  margin: 20px;
+}
+.text-center h1 {
+  text-align: center;
+  font-weight: normal;  color: #2ecfed;
+}
+section {
+  padding: 20px 0px;
+  min-height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.menu-btn {
+  display: none;
+}
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-label {
+  position: absolute;
+  cursor: text;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--secondary);
+  left: 10px;
+  font-size: 15px;
+  color: var(--grey);
+  transition: 200ms ease-in-out;
+}
+form input[type="submit"] {
+  border: 0;
+  outline: 0;
+  background: #028d76;
+  color: var(--secondary);
+  padding: 13px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error {
+  color: #eb1111;
+}
+.form-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border: 1px solid var(--black);
+  background: 0;
+  font-size: 12px;
+  padding: 15px 10px;
+  color: var(--black);
+  border-radius: 2px;
+}
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: 2px;
+  font-size: 13px;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: var(--primary);
+}
+
+.footer .copyright {
+  font-size: 15px;
+  color: var(--grey);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: var(--primary);
+}
+table th,
+table td {
+  text-align: left;
+  border: 1px solid var(--secondary);
+  padding: 15px 10px;
+}
+
+th {
+  background: var(--primary);
+}
+table tr:nth-child(odd) {
+  background: var(--secondary);
+}
